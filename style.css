@@ -1583,6 +1583,20 @@ html, body {
 
 /* ─── RESPONSIVE MOBILE (PORTRAIT FULL SCREEN) ─── */
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  body {
+    min-height: 100vh;
+  }
+
+  #quiz-screen,
+  #surprise-screen,
+  #gift-screen {
+    overflow-x: hidden;
+  }
+
   .quiz-card {
     flex-direction: column;
     width: 100%; height: 100%;
@@ -1621,6 +1635,23 @@ html, body {
   }
   .vintage-camera-deco {
     display: none;
+  }
+
+  .gift-stage {
+    padding: 18px 10px 20px;
+  }
+  .mystery-boxes-row {
+    gap: 8px;
+    width: 100%;
+  }
+  .mystery-box-item {
+    flex: 0 1 30%;
+  }
+  .heart-box-svg {
+    max-height: 155px;
+  }
+  .gift-bg-star {
+    font-size: 1.1rem;
   }
 
   /* Mobile Cake Modal */
